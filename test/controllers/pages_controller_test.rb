@@ -10,4 +10,9 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     get pages_about_url
     assert_response :success
   end
+
+  test "should get repertoire" do 
+    get pages_repertoire_url 
+    assert_response :success
+  end
 end
